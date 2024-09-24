@@ -109,7 +109,6 @@ function App() {
                 </div>
               </div>
             </a>
-
             {/* card 2 */}
             <a className="flex flex-col items-center gap-2 basis-[47%]  bg-n2 rounded-b">
               {/* image */}
