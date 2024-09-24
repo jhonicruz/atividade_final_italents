@@ -1,54 +1,29 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Logo from './assets/logo_fiction_mobile.svg?react';
+
 import { useMediaQuery } from '@uidotdev/usehooks';
-import Hero from './assets/image1.png';
+
 import imageProduct from './assets/image_product.png';
 import Star from './assets/star.svg?react';
 import Slides from './componentes/Slides';
+import Header from './componentes/Header';
 
 function App() {
-  const isSmallDevice = useMediaQuery('only screen and (max-width : 768px)');
-  const isMediumDevice = useMediaQuery(
-    'only screen and (min-width : 769px) and (max-width : 992px)',
-  );
-  const isLargeDevice = useMediaQuery(
-    'only screen and (min-width : 993px) and (max-width : 1200px)',
-  );
-  const isExtraLargeDevice = useMediaQuery('only screen and (min-width : 1201px)');
+  // const isSmallDevice = useMediaQuery('only screen and (max-width : 768px)');
+  // const isMediumDevice = useMediaQuery(
+  //   'only screen and (min-width : 769px) and (max-width : 992px)',
+  // );
+  // const isLargeDevice = useMediaQuery(
+  //   'only screen and (min-width : 993px) and (max-width : 1200px)',
+  // );
+  // const isExtraLargeDevice = useMediaQuery('only screen and (min-width : 1201px)');
 
   return (
     <>
       <div>
         <BrowserRouter>
-          <header className="flex items-center justify-between h-[60px] p-3 bg-n2 fixed top-0 w-full z-10">
-            <a href="#">
-              <Logo className="w-[66px]" />
-            </a>
-
-            <nav>
-              <button
-                aria-controls="menu"
-                aria-expanded="false"
-                aria-haspopup="true"
-                className="text-white font-poppinsBold"
-              >
-                MENU
-              </button>
-              <ul role="menu" className="hidden">
-                <li>
-                  <a href="#">Produtos</a>
-                </li>
-                <li>
-                  <a href="#">Cadastrar Produto</a>
-                </li>
-                <li>
-                  <a href="#">Login</a>
-                </li>
-              </ul>
-            </nav>
-          </header>
-
+          <Header />
           <Slides />
 
           {/* Cards */}
