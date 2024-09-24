@@ -5,6 +5,7 @@ import { useMediaQuery } from '@uidotdev/usehooks';
 import Hero from './assets/image1.png';
 import imageProduct from './assets/image_product.png';
 import Star from './assets/star.svg?react';
+import Slides from './componentes/Slides';
 
 function App() {
   const isSmallDevice = useMediaQuery('only screen and (max-width : 768px)');
@@ -48,19 +49,24 @@ function App() {
             </nav>
           </header>
 
-          <section className="pt-[60px] h-full bg-orange-500 flex justify-start flex-col gap-[40px]">
-            {/* Hero */}
+          {/* <section className="pt-[60px] h-full bg-orange-500 flex justify-start flex-col gap-[40px]">
+           
 
             <div className=" flex bg-zinc-600 w-full h-[300px] justify-center pt-[60px]">
               <img src={Hero} alt="" className="w-full object-cover" />
             </div>
-          </section>
+          </section> */}
+
+          <Slides />
 
           {/* Cards */}
 
           <main className=" flex flex-wrap justify-center w-full h-full p-3 pt-[60px] gap-5 mx-auto">
             {/* card 1 */}
-            <div className="flex flex-col items-center gap-2 basis-[47%]  bg-n2 rounded-b">
+            <a
+              onClick={() => console.log('clicou')}
+              className="flex flex-col items-center gap-2 basis-[47%]  bg-n2 rounded-b"
+            >
               {/* image */}
               <div className=" bg-orange-300 w-full rounded-t overflow-hidden">
                 <img src={imageProduct} alt="" className="w-full object-cover" />
@@ -102,10 +108,9 @@ function App() {
                   </button>
                 </div>
               </div>
-            </div>
-
+            </a>
             {/* card 2 */}
-            <div className="flex flex-col items-center gap-2 basis-[47%]  bg-n2 rounded-b">
+            <a className="flex flex-col items-center gap-2 basis-[47%]  bg-n2 rounded-b">
               {/* image */}
               <div className=" bg-orange-300 w-full rounded-t overflow-hidden">
                 <img src={imageProduct} alt="" className="w-full object-cover" />
@@ -147,7 +152,7 @@ function App() {
                   </button>
                 </div>
               </div>
-            </div>
+            </a>
           </main>
         </BrowserRouter>
       </div>
