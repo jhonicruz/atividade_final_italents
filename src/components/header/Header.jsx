@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import Logo from '../assets/logo_fiction_mobile.svg?react';
+import Logo from '../../assets/logo_fiction_mobile.svg?react';
 const Header = () => {
   return (
     <header className="flex items-center justify-between h-[60px] p-3 bg-n2 fixed top-0 w-full z-10">

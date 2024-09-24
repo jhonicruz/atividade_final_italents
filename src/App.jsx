@@ -1,13 +1,10 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
-import { useMediaQuery } from '@uidotdev/usehooks';
-
 import imageProduct from './assets/image_product.png';
 import Star from './assets/star.svg?react';
-import Slides from './componentes/Slides';
-import Header from './componentes/Header';
+import Slides from './components/slides/Slides';
+import Header from './components/header/Header';
 
 function App() {
   // const isSmallDevice = useMediaQuery('only screen and (max-width : 768px)');
