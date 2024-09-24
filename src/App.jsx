@@ -49,14 +49,6 @@ function App() {
             </nav>
           </header>
 
-          {/* <section className="pt-[60px] h-full bg-orange-500 flex justify-start flex-col gap-[40px]">
-           
-
-            <div className=" flex bg-zinc-600 w-full h-[300px] justify-center pt-[60px]">
-              <img src={Hero} alt="" className="w-full object-cover" />
-            </div>
-          </section> */}
-
           <Slides />
 
           {/* Cards */}
