@@ -1,10 +1,11 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './components/header/Header';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
-import Footer from './components/footer/Footer';
+import Footer from './components/footer/FooterElement';
+import Header from './components/header/Header';
 
 function App() {
   // const isSmallDevice = useMediaQuery('only screen and (max-width : 768px)');

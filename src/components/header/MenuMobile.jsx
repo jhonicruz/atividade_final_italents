@@ -10,20 +10,12 @@ import {
   DrawerTrigger,
 } from '../ui/drawer';
 
-import { Button } from '../ui/button';
-import { MenuIcon } from 'lucide-react';
-
-const MenuMobile = () => {
+const MenuMobile = ({ trigger: Trigger, children }) => {
   return (
     <div>
       <Drawer direction="right">
-        <DrawerTrigger className="text-white">
-          <MenuIcon />
-        </DrawerTrigger>
-
-        <DrawerContent>
-          <span>Menu</span>
-        </DrawerContent>
+        <DrawerTrigger className="text-white">{Trigger}</DrawerTrigger>
+        <DrawerContent>{children}</DrawerContent>
       </Drawer>
       {/*  <Drawer direction="right">
         <DrawerTrigger className="text-white" aria-label="Open menu">

@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from './Link';
 
-const ListLinks = () => {
+const MenuDesktop = () => {
   return (
     <ul
       role="menu"
@@ -20,4 +20,4 @@ const ListLinks = () => {
   );
 };
 
-export default ListLinks;
+export default MenuDesktop;
