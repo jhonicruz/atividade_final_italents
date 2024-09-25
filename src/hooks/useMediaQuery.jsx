@@ -8,7 +8,7 @@ export function useMediaQuery(query) {
       setValue(e.matches);
     }
 
-    const result = mathMedia(query);
+    const result = matchMedia(query);
     result.addEventListener('change', onChange);
     setValue(result.matches);
 
