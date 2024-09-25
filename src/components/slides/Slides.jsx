@@ -1,5 +1,5 @@
 import React from 'react';
-import Hero from '../assets/image1.png';
+import Hero from '../../assets/image1.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
