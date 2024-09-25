@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Footer from './components/footer/FooterElement';
 import Header from './components/header/Header';
+import Cadastro from './pages/Cadastro';
 
 function App() {
   // const isSmallDevice = useMediaQuery('only screen and (max-width : 768px)');
@@ -26,6 +27,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="teste" element={<h1>Teste</h1>} />
             <Route path="*" element={<NotFound />} />
+            <Route path="cadastrar-produtos" element={<Cadastro />} />
           </Routes>
           <Footer />
         </BrowserRouter>

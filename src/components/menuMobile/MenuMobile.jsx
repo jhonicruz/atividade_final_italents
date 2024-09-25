@@ -9,13 +9,46 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from '../ui/drawer';
+import { Link } from 'react-router-dom';
 
-const MenuMobile = ({ trigger: Trigger, children }) => {
+const MenuMobile = ({ trigger: Trigger }) => {
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
+
   return (
     <div>
-      <Drawer direction="right">
+      <Drawer direction="right" open={isOpen} onOpenChange={setIsOpen}>
         <DrawerTrigger className="text-white">{Trigger}</DrawerTrigger>
-        <DrawerContent>{children}</DrawerContent>
+        <DrawerContent aria-labelledby="drawer-title">
+          <DrawerHeader>
+            <DrawerTitle id="drawer-title">Menu</DrawerTitle>
+          </DrawerHeader>
+          <nav>
+            <ul className="flex flex-col gap-4 p-4 text-zinc-900">
+              <li>
+                <Link to="/" onClick={handleLinkClick} className="text-zinc-900">
+                  Produtos
+                </Link>
+              </li>
+              <li>
+                <Link to="/cadastrar-produtos" onClick={handleLinkClick}>
+                  Cadastrar Produto
+                </Link>
+              </li>
+              <li>
+                <Link to="/login" content="Login" onClick={handleLinkClick} />
+              </li>
+            </ul>
+          </nav>
+          <DrawerFooter>
+            <DrawerClose>
+              <button>x</button>
+            </DrawerClose>
+          </DrawerFooter>
+        </DrawerContent>
       </Drawer>
       {/*  <Drawer direction="right">
         <DrawerTrigger className="text-white" aria-label="Open menu">
