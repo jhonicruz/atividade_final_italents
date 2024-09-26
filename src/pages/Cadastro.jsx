@@ -4,7 +4,7 @@ import Title from '../components/title/Title';
 
 const Cadastro = () => {
   return (
-    <div className="pt-[150px] text-white h-screen flex flex-col p-4 gap-10">
+    <div className="pt-[150px] pb-[100px] text-white w-full flex flex-col p-4 gap-10">
       <Title content="Cadastrar Produto" />
       <Form />
     </div>

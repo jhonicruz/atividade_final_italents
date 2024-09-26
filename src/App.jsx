@@ -28,7 +28,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="teste" element={<h1>Teste</h1>} />
             <Route path="cadastrar-produtos" element={<Cadastro />} />
-            <Route path="/produto/:id" element={<SingleProduct />} />
+            <Route path="produto/:id" element={<SingleProduct />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
