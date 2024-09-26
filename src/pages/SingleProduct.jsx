@@ -21,7 +21,6 @@ const SingleProduct = () => {
     }
     fetchData();
   }, [id]);
-  // const { descricao, imagem, precoAntes, precoDepois } = product;
 
   if (!product) return null;
   return (
