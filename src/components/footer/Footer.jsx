@@ -6,13 +6,13 @@ import { FaFacebook, FaInstagram, FaTiktok, FaWhatsapp } from 'react-icons/fa6';
 
 const Footer = () => {
   return (
-    <footer className="h-[238px] bg-n2 p-3 flex flex-col items-center w-full py-6 space-y-4">
-      <div className="w-full flex flex-col items-center gap-5">
+    <footer className="min-h-[300px] h-full bg-n2 flex flex-col items-center w-full pt-8 space-y-8">
+      <div className="w-full flex flex-col items-center gap-5 p-3">
         <Logo />
         <Divisor />
       </div>
 
-      <div className="grid grid-cols-3 w-full gap-2">
+      <div className="grid grid-cols-3 w-full gap-2 p-3">
         <div className="flex flex-col items-center">
           <Title content="Sua Conta" className="text-white text-[14px]" />
           <ul className="flex flex-col gap-1 items-center text-center">
@@ -46,6 +46,12 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+      </div>
+
+      <div className="bg-p1 h-[50px] w-full p-3">
+        <p className="text-[12px] text-center text-zinc-800">
+          © 2021 Fiction Store. Todos os direitos reservados.
+        </p>
       </div>
     </footer>
   );
