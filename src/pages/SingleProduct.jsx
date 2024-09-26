@@ -21,26 +21,19 @@ const SingleProduct = () => {
     }
     fetchData();
   }, [id]);
-
-  console.log(product);
+  // const { descricao, imagem, precoAntes, precoDepois } = product;
 
   if (!product) return null;
   return (
     <div className="grid grid-cols-1 p-8 pt-[100px]">
-      <Product.Root className="bg-blue-600">
-        <Product.Image src="https://images.unsplash.com/photo-1612838320302-4b3b3b3b3b3b" />
+      <Product.Root>
+        <Product.Image src={product.imagem} />
         <Product.Infos>
           <Product.Rating rate="250" />
-          <Product.Title
-            title=" asdasdasdasd asdasdasasdasdasdasdasddasdasdasdasdasdasdSamsung Galaxy S8"
-            className="text-3xl h-auto bg-teal-300"
-          />
-          <Product.Description
-            descripton="SmartphUASHDUAS ASUDHAUSDHasdasdasudhausdassssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssshausdadasdasdasd AUSHDUAHSD UAHSDUHAUSDH UAHSUHA Sone Pica1"
-            className="bg-red-400 w-full"
-          />
-          <Product.PriceBefore priceBefore="259" className="text-[16px] pt-2" />
-          <Product.PriceNow priceNow="200" className="text-[22px]" />
+          <Product.Title title={product.nome} className="text-3xl" />
+          <Product.Description descripton={product.descricao} />
+          <Product.PriceBefore priceBefore={product.precoAntes} className="text-[16px] pt-2" />
+          <Product.PriceNow priceNow={product.precoDepois} className="text-[22px]" />
           <Product.Button />
         </Product.Infos>
       </Product.Root>
