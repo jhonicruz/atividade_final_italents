@@ -1,9 +1,9 @@
 import React from 'react';
-import imageProduct from '../../../assets/image_product.png';
-export const ProductImage = ({ alt }) => {
+
+export const ProductImage = ({ image, alt }) => {
   return (
     <div className=" bg-orange-300 w-full rounded-t overflow-hidden">
-      <img src={imageProduct} alt={alt} className="w-full object-cover" />
+      <img src={image} alt={alt} className="w-full object-cover" />
     </div>
   );
 };

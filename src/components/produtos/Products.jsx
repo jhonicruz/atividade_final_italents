@@ -17,9 +17,10 @@ const Products = () => {
   return (
     <main className="grid grid-cols-2 p-3 pt-[60px] pb-[100px] gap-5">
       {products &&
-        products.map(({ id, nome, descricao, precoAntes, precoDepois, comentarios }) => {
+        products.map(({ id, nome, descricao, precoAntes, precoDepois, comentarios, imagem }) => {
           return (
             <Product
+              image={imagem}
               productId={id}
               key={id}
               title={nome}

@@ -26,7 +26,7 @@ const SingleProduct = () => {
   return (
     <div className="grid grid-cols-1 p-8 pt-[100px]">
       <Product.Root>
-        <Product.Image src={product.imagem} />
+        <Product.Image image={product.imagem} />
         <Product.Infos>
           <Product.Rating rate="250" />
           <Product.Title title={product.nome} className="text-3xl" />
