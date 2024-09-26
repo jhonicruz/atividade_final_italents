@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../assets/brand-mobile.svg?react';
+import Logo from '../../assets/LOGO-FOOTER.svg?react';
 import Divisor from './Divisor';
 import Title from '../title/Title';
 import { FaFacebook, FaInstagram, FaTiktok, FaWhatsapp } from 'react-icons/fa6';
