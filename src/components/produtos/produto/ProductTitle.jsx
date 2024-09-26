@@ -1,8 +1,14 @@
 import React from 'react';
+import { twMerge } from 'tailwind-merge';
 
-export const ProductTitle = ({ title }) => {
+export const ProductTitle = ({ title, ...rest }) => {
   return (
-    <h4 className="font-poppinsSemibold text-[18px] -mt-3 text-white h-[60px] leading-none text-center flex items-center">
+    <h4
+      className={twMerge(
+        'w-full min-h-[38px] h-auto text-[18px] font-poppinsSemibold text-white leading-none text-center line-clamp-2',
+        rest.className,
+      )}
+    >
       {title}
     </h4>
   );

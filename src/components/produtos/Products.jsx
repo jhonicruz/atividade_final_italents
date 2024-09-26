@@ -15,11 +15,12 @@ const Products = () => {
   }, []);
 
   return (
-    <main className=" flex flex-wrap justify-center w-full h-full p-3 pt-[60px] gap-5 mx-auto">
+    <main className="grid grid-cols-2 p-3 pt-[60px] pb-[100px] gap-5">
       {products &&
         products.map(({ id, nome, descricao, precoAntes, precoDepois, comentarios }) => {
           return (
             <Product
+              productId={id}
               key={id}
               title={nome}
               description={descricao}

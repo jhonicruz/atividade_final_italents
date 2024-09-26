@@ -11,10 +11,13 @@ export const HeaderNav = ({ media, trigger: Trigger }) => {
       {isDesktop ? (
         <MenuDesktop>
           <li>
-            <Link to="/" content="Produtos" />
+            {/* <Link to="/" content="Produtos" /> */}
+            <Link to="/">Produtos</Link>
           </li>
           <li>
-            <Link to="/teste" content="Cadastrar Produto" />
+            {/* <Link to="/teste" content="Cadastrar Produto" /> */}
+
+            <Link to="/cadastrar-produtos">Cadastrar Produtos</Link>
           </li>
         </MenuDesktop>
       ) : (

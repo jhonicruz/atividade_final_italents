@@ -19,8 +19,8 @@ const Slides = () => {
         pagination={{ clickable: true }}
         slidesPerView={1}
         autoplay={{ delay: 3000 }}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={() => console.log()}
+        onSwiper={() => console.log()}
         modules={[Autoplay, Pagination, Navigation]}
       >
         {slides.map((slide) => {
