@@ -9,9 +9,34 @@ const Form = () => {
   const [priceBefore, setPriceBefore] = React.useState('');
   const [priceNow, setPriceNow] = React.useState('');
 
+  async function handleSubmit() {
+    const response = await fetch(`http://localhost:3000/produtos/`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        nome: name,
+        rate,
+        descricao: description,
+        precoAntes: priceBefore,
+        precoDepois: priceNow,
+        avaliacao: 4.8,
+        comentarios: 320,
+        imagem: 'https://via.placeholder.com/150',
+      }),
+    });
+
+    // Falta implementar o hook de fetch
+    // Falta implementar o feedback visual, cadastrando... e cadastrado com sucesso
+
+    if (!response.ok) throw new Error('Erro ao cadastrar produto');
+    window.location.reload();
+  }
+
   return (
     <div className="flex flex-col gap-8">
-      <form className="grid grid-cols-4 gap-2" id="meuFormulario">
+      <form className="grid grid-cols-4 gap-2" id="meuFormulario" onSubmit={handleSubmit}>
         <InputForm
           name="nome-produto"
           label="Nome do Produto"

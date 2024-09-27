@@ -1,204 +1,75 @@
 {
   "produtos": [
     {
-      "id": 1,
-      "nome": "Notebook Asus num sei das quantas la udhuashudahsudhasd",
-      "descricao": "Câmera Frontal - 25 megapixels - 8gb ram - 256Gb Armazenamento",
-      "precoAntes": 199.9,
-      "precoDepois": 159.9,
-      "imagem": "https://via.placeholder.com/150",
-      "avaliacao": 4.5,
-      "comentarios": 269
-    },
-    {
-      "id": 2,
-      "nome": "Smartphone Samsung",
-      "descricao": "Tela AMOLED - 64GB Armazenamento - 4GB RAM",
-      "precoAntes": 349.9,
-      "precoDepois": 299.9,
-      "imagem": "https://via.placeholder.com/150",
-      "avaliacao": 4.7,
-      "comentarios": 150
-    },
-    {
-      "id": 3,
+      "id": "3",
       "nome": "Tablet Apple",
       "descricao": "Tela Retina - 128GB Armazenamento - 4GB RAM",
       "precoAntes": 599.9,
       "precoDepois": 499.9,
-      "imagem": "https://via.placeholder.com/150",
+      "imagem": "https://picsum.photos/200/300?random=1",
       "avaliacao": 4.8,
       "comentarios": 320
     },
     {
-      "id": 4,
+      "id": "4",
       "nome": "Smartwatch Xiaomi",
       "descricao": "Monitoramento de Saúde - GPS - 2GB RAM",
       "precoAntes": 129.9,
       "precoDepois": 99.9,
-      "imagem": "https://via.placeholder.com/150",
+      "imagem": "https://picsum.photos/200/300?random=1",
       "avaliacao": 4.3,
       "comentarios": 210
     },
     {
-      "id": 5,
+      "id": "5",
       "nome": "Fone de Ouvido JBL",
       "descricao": "Cancelamento de Ruído - Bluetooth - 20h de Bateria",
       "precoAntes": 99.9,
       "precoDepois": 79.9,
-      "imagem": "https://via.placeholder.com/150",
+      "imagem": "https://picsum.photos/200/300?random=1",
       "avaliacao": 4.6,
       "comentarios": 180
     },
     {
-      "id": 6,
+      "id": "6",
       "nome": "Câmera Canon",
       "descricao": "Resolução 24MP - Zoom Óptico 10x - Wi-Fi",
       "precoAntes": 699.9,
       "precoDepois": 599.9,
-      "imagem": "https://via.placeholder.com/150",
+      "imagem": "https://picsum.photos/200/300?random=1",
       "avaliacao": 4.7,
       "comentarios": 140
     },
     {
-      "id": 7,
+      "id": "7",
       "nome": "Impressora HP",
       "descricao": "Impressão Colorida - Wi-Fi - Scanner",
       "precoAntes": 249.9,
       "precoDepois": 199.9,
-      "imagem": "https://via.placeholder.com/150",
+      "imagem": "https://picsum.photos/200/300?random=1",
       "avaliacao": 4.4,
       "comentarios": 90
     },
     {
-      "id": 8,
+      "id": "8",
       "nome": "Monitor LG",
       "descricao": "Resolução Full HD - 24 polegadas - HDMI",
       "precoAntes": 349.9,
       "precoDepois": 299.9,
-      "imagem": "https://via.placeholder.com/150",
+      "imagem": "https://picsum.photos/200/300?random=1",
       "avaliacao": 4.5,
       "comentarios": 110
     },
     {
-      "id": 9,
-      "nome": "Teclado Mecânico Razer",
-      "descricao": "Switches Mecânicos - RGB - Anti-Ghosting",
-      "precoAntes": 159.9,
-      "precoDepois": 129.9,
-      "imagem": "https://via.placeholder.com/150",
-      "avaliacao": 4.6,
-      "comentarios": 95
-    },
-    {
-      "id": 10,
-      "nome": "Mouse Gamer Logitech",
-      "descricao": "Sensor Óptico - 16000 DPI - RGB",
-      "precoAntes": 109.9,
-      "precoDepois": 89.9,
-      "imagem": "https://via.placeholder.com/150",
-      "avaliacao": 4.7,
-      "comentarios": 130
-    },
-    {
-      "id": 11,
-      "nome": "Roteador TP-Link",
-      "descricao": "Dual Band - 1200Mbps - 4 Antenas",
-      "precoAntes": 79.9,
-      "precoDepois": 59.9,
-      "imagem": "https://via.placeholder.com/150",
-      "avaliacao": 4.4,
-      "comentarios": 85
-    },
-    {
-      "id": 12,
-      "nome": "HD Externo Seagate",
-      "descricao": "1TB - USB 3.0 - Portátil",
-      "precoAntes": 179.9,
-      "precoDepois": 149.9,
-      "imagem": "https://via.placeholder.com/150",
-      "avaliacao": 4.6,
-      "comentarios": 75
-    },
-    {
-      "id": 13,
-      "nome": "SSD Kingston",
-      "descricao": "240GB - SATA 3 - Leitura 500MB/s",
-      "precoAntes": 109.9,
-      "precoDepois": 89.9,
-      "imagem": "https://via.placeholder.com/150",
-      "avaliacao": 4.7,
-      "comentarios": 65
-    },
-    {
-      "id": 14,
-      "nome": "Placa de Vídeo NVIDIA",
-      "descricao": "GTX 1660 - 6GB GDDR5 - HDMI",
-      "precoAntes": 1199.9,
-      "precoDepois": 999.9,
-      "imagem": "https://via.placeholder.com/150",
+      "id": "2565",
+      "nome": "delete-me",
+      "rate": "123",
+      "descricao": "asdasdasd",
+      "precoAntes": "123",
+      "precoDepois": "11",
       "avaliacao": 4.8,
-      "comentarios": 50
-    },
-    {
-      "id": 15,
-      "nome": "Memória RAM Corsair",
-      "descricao": "8GB - DDR4 - 3200MHz",
-      "precoAntes": 99.9,
-      "precoDepois": 79.9,
-      "imagem": "https://via.placeholder.com/150",
-      "avaliacao": 4.6,
-      "comentarios": 70
-    },
-    {
-      "id": 16,
-      "nome": "Fonte Corsair",
-      "descricao": "650W - 80 Plus Bronze - Modular",
-      "precoAntes": 159.9,
-      "precoDepois": 129.9,
-      "imagem": "https://via.placeholder.com/150",
-      "avaliacao": 4.5,
-      "comentarios": 60
-    },
-    {
-      "id": 17,
-      "nome": "Gabinete Cooler Master",
-      "descricao": "ATX - Vidro Temperado - RGB",
-      "precoAntes": 249.9,
-      "precoDepois": 199.9,
-      "imagem": "https://via.placeholder.com/150",
-      "avaliacao": 4.7,
-      "comentarios": 55
-    },
-    {
-      "id": 18,
-      "nome": "Headset HyperX",
-      "descricao": "Surround 7.1 - Microfone Destacável - Confortável",
-      "precoAntes": 179.9,
-      "precoDepois": 149.9,
-      "imagem": "https://via.placeholder.com/150",
-      "avaliacao": 4.8,
-      "comentarios": 100
-    },
-    {
-      "id": 19,
-      "nome": "Webcam Logitech",
-      "descricao": "Full HD - Microfone Embutido - USB",
-      "precoAntes": 129.9,
-      "precoDepois": 99.9,
-      "imagem": "https://via.placeholder.com/150",
-      "avaliacao": 4.6,
-      "comentarios": 80
-    },
-    {
-      "id": 20,
-      "nome": "Microfone Blue Yeti",
-      "descricao": "USB - Condensador - Alta Qualidade",
-      "precoAntes": 249.9,
-      "precoDepois": 199.9,
-      "imagem": "https://via.placeholder.com/150",
-      "avaliacao": 4.8,
-      "comentarios": 90
+      "comentarios": 320,
+      "imagem": "https://via.placeholder.com/150"
     }
   ]
 }

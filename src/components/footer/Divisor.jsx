@@ -1,7 +1,8 @@
 import React from 'react';
+import { twMerge } from 'tailwind-merge';
 
-const Divisor = () => {
-  return <div className="w-full h-px bg-custom"></div>;
+const Divisor = ({ ...rest }) => {
+  return <div className={twMerge('w-full h-px bg-custom', rest.className)}></div>;
 };
 
 export default Divisor;
