@@ -6,8 +6,9 @@ import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
-import Cadastro from './pages/Cadastro';
+import Cadastro from './pages/ManageProducts';
 import SingleProduct from './pages/SingleProduct';
+import EditProduct from './pages/EditProduct';
 
 function App() {
   // const isSmallDevice = useMediaQuery('only screen and (max-width : 768px)');
@@ -27,7 +28,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="teste" element={<h1>Teste</h1>} />
-            <Route path="cadastrar-produtos" element={<Cadastro />} />
+            <Route path="gerenciar-produtos" element={<Cadastro />} />
+            <Route path="gerenciar-produtos/editar/:id" element={<EditProduct />} />
             <Route path="produto/:id" element={<SingleProduct />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

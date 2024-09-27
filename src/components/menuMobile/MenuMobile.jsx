@@ -34,8 +34,8 @@ const MenuMobile = ({ trigger: Trigger }) => {
                 </Link>
               </li>
               <li>
-                <Link to="/cadastrar-produtos" onClick={handleLinkClick}>
-                  Cadastrar Produto
+                <Link to="/gerenciar-produtos" onClick={handleLinkClick}>
+                  Gerenciar Produtos
                 </Link>
               </li>
               <li>

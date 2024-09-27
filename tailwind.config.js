@@ -11,6 +11,7 @@ export default {
       },
       backgroundImage: {
         custom: 'linear-gradient(90deg,#111 12.06%, #34ff82 52.49%, #111 89.89%)',
+        custom2: 'linear-gradient(90deg,#222224 12.06%, #34ff82 52.49%, #222224 89.89%)',
       },
       fontFamily: {
         poppinsRegular: 'poppinsregular, sans-serif',
