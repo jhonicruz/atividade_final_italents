@@ -41,32 +41,12 @@
       "comentarios": 140
     },
     {
-      "id": "7",
-      "nome": "Impressora HP",
-      "descricao": "Impressão Colorida - Wi-Fi - Scanner",
-      "precoAntes": 249.9,
-      "precoDepois": 199.9,
-      "imagem": "https://picsum.photos/200/300?random=1",
-      "avaliacao": 4.4,
-      "comentarios": 90
-    },
-    {
-      "id": "8",
-      "nome": "Monitor LG",
-      "descricao": "Resolução Full HD - 24 polegadas - HDMI",
-      "precoAntes": 349.9,
-      "precoDepois": 299.9,
-      "imagem": "https://picsum.photos/200/300?random=1",
-      "avaliacao": 4.5,
-      "comentarios": 110
-    },
-    {
-      "id": "2565",
-      "nome": "delete-me",
-      "rate": "123",
-      "descricao": "asdasdasd",
-      "precoAntes": "123",
-      "precoDepois": "11",
+      "id": "14f3",
+      "nome": "Camera TekPix",
+      "rate": "12",
+      "descricao": "A melhor Câmera que o mundo já viu!",
+      "precoAntes": "500",
+      "precoDepois": "300",
       "avaliacao": 4.8,
       "comentarios": 320,
       "imagem": "https://via.placeholder.com/150"
