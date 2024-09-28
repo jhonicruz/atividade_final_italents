@@ -8,7 +8,7 @@
       "precoAntes": 129.9,
       "precoDepois": 99.9,
       "imagem": "https://picsum.photos/200/300?random=1",
-      "avaliacao": 4.3
+      "avaliacao": 4.5
     },
     {
       "id": "2",
@@ -96,7 +96,9 @@
       "comentarios": 60,
       "descricao": "Bluetooth - Extra Bass",
       "precoAntes": 49.9,
-      "precoDepois": 39.9
+      "precoDepois": 39.9,
+      "imagem": "https://picsum.photos/200/300?random=10",
+      "avaliacao": 4.2
     }
   ]
 }

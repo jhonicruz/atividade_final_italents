@@ -1,6 +1,5 @@
-import React from 'react';
 import { MenuIcon } from 'lucide-react';
-import Brand from '../../assets/brand-mobile.svg?react';
+import Brand from '../../assets/svgs/brand-mobile.svg?react';
 import { Header } from './index';
 
 const HeaderElement = () => {

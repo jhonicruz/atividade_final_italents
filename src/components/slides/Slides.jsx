@@ -1,14 +1,14 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import Hero from '../../assets/image1.png';
-import Img1 from '../../assets/img1.jpg';
-import Img2 from '../../assets/img2.jpg';
-import Img3 from '../../assets/img3.jpg';
-import Img4 from '../../assets/img4.jpg';
-import Img5 from '../../assets/img5.jpg';
-import Img6 from '../../assets/img6.jpg';
-import Img7 from '../../assets/img7.jpg';
-import Img8 from '../../assets/img8.jpg';
+import Hero from '../../assets/images/image1.png';
+import Img1 from '../../assets/images/img1.jpg';
+import Img2 from '../../assets/images/img2.jpg';
+import Img3 from '../../assets/images/img3.jpg';
+import Img4 from '../../assets/images/img4.jpg';
+import Img5 from '../../assets/images/img5.jpg';
+import Img6 from '../../assets/images/img6.jpg';
+import Img7 from '../../assets/images/img7.jpg';
+import Img8 from '../../assets/images/img8.jpg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 

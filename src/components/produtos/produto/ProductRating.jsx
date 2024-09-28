@@ -1,5 +1,5 @@
-import React from 'react';
-import Star from '../../../assets/star.svg?react';
+/* eslint-disable react/prop-types */
+import Star from '../../../assets/svgs/star.svg?react';
 export const ProductRating = ({ rate }) => {
   return (
     <div className="flex items-center justify-center gap-1 h-[30px] pb-1  ">
