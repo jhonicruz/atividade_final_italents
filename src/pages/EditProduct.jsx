@@ -65,7 +65,7 @@ const EditProduct = () => {
   if (isError) return <p>Error: {error.message}</p>;
   return (
     <div className="pt-[150px] pb-[100px] text-white w-full items-center flex flex-col p-4 gap-10">
-      {update && <Message content="Produto atualizado com sucesso!" type="error" />}
+      {update && <Message content="Produto atualizado com sucesso!" />}
 
       <Title content="Editar Produto" />
 
