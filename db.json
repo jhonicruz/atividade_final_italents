@@ -6,7 +6,9 @@
       "comentarios": 210,
       "descricao": "Tela 10' - 128GB Armazenamento - 4GB RAM",
       "precoAntes": 129.9,
-      "precoDepois": 99.9
+      "precoDepois": 99.9,
+      "imagem": "https://picsum.photos/200/300?random=1",
+      "avaliacao": 4.3
     },
     {
       "id": "2",
@@ -97,6 +99,16 @@
       "imagem": "https://picsum.photos/200/300?random=10",
       "avaliacao": 4.7,
       "comentarios": 140
+    },
+    {
+      "id": "35d0",
+      "nome": "TVBOX",
+      "comentarios": "123",
+      "descricao": "123",
+      "precoAntes": "123",
+      "precoDepois": "123",
+      "imagem": "https://picsum.photos/200/300?random=1",
+      "avaliacao": 4.8
     }
   ]
 }

@@ -65,9 +65,8 @@ const EditProduct = () => {
   if (isError) return <p>Error: {error.message}</p>;
   return (
     <div className="pt-[150px] pb-[100px] text-white w-full items-center flex flex-col p-4 gap-10">
-      {update && <Message content="Produto atualizado com sucesso!" />}
-
       <Title content="Editar Produto" />
+      {update && <Message content="Produto atualizado com sucesso!" />}
 
       <form className="grid grid-cols-4 gap-2" id="meuFormulario" onSubmit={handleSubmit}>
         <InputForm
@@ -118,7 +117,7 @@ const EditProduct = () => {
           className="col-span-2"
         />
       </form>
-      <Button content="EDITAR" type="submit" form="meuFormulario" className="mt-6" />
+      <Button content="EDITAR" type="submit" form="meuFormulario" />
     </div>
   );
 };

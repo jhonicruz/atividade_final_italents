@@ -2,6 +2,7 @@ import React from 'react';
 import InputForm from './InputForm';
 import Button from '../buttons/Button';
 import { useMutateProduct } from '../../hooks/queries/useMutateProduct';
+import Message from '../message/Message';
 
 const Form = () => {
   const [name, setName] = React.useState('');
@@ -10,6 +11,9 @@ const Form = () => {
   const [priceBefore, setPriceBefore] = React.useState('');
   const [priceNow, setPriceNow] = React.useState('');
   const [errorMessage, setErrorMessage] = React.useState(''); // Estado para armazenar a mensagem de erro
+
+  const [sucess, setSucess] = React.useState(false);
+
   const { addProductMutation } = useMutateProduct();
 
   async function handleSubmit(event) {
@@ -25,7 +29,12 @@ const Form = () => {
     };
     addProductMutation.mutate(product, {
       onSuccess: () => {
-        alert('Produto adicionado com sucesso!');
+        setSucess(true);
+
+        setTimeout(() => {
+          setSucess(false);
+        }, 2000);
+
         // Limpar os campos do formulário após a submissão bem-sucedida
         setName('');
         setRate('');
@@ -41,9 +50,10 @@ const Form = () => {
   }
 
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col items-center gap-8 w-full">
       {errorMessage && <p className="text-red-500">{errorMessage}</p>}
-      <form className="grid grid-cols-4 gap-2" id="meuFormulario" onSubmit={handleSubmit}>
+      {sucess && <Message content="Produto Cadastrado com Sucesso!" />}
+      <form className="grid grid-cols-4 gap-2 w-full" id="meuFormulario" onSubmit={handleSubmit}>
         <InputForm
           name="nome-produto"
           label="Nome do Produto"
@@ -92,7 +102,7 @@ const Form = () => {
           className="col-span-2"
         />
       </form>
-      <Button content="Cadastrar" type="submit" form="meuFormulario" />
+      <Button content="Cadastrar" type="submit" form="meuFormulario" className="w-full flex" />
     </div>
   );
 };
