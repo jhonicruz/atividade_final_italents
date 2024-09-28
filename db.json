@@ -12,103 +12,91 @@
     },
     {
       "id": "2",
-      "nome": "Smartwatch Xiaomi",
-      "descricao": "Monitoramento de Saúde - GPS - 2GB RAM",
-      "precoAntes": 129.9,
-      "precoDepois": 99.9,
+      "nome": "Smartphone Samsung",
+      "comentarios": 150,
+      "descricao": "Tela 6' - 64GB Armazenamento - 4GB RAM",
+      "precoAntes": 99.9,
+      "precoDepois": 79.9,
       "imagem": "https://picsum.photos/200/300?random=2",
-      "avaliacao": 4.3,
-      "comentarios": 210
+      "avaliacao": 4.5
     },
     {
       "id": "3",
-      "nome": "Fone de Ouvido JBL",
-      "descricao": "Cancelamento de Ruído - Bluetooth - 20h de Bateria",
-      "precoAntes": 99.9,
-      "precoDepois": 79.9,
+      "nome": "Notebook Dell",
+      "comentarios": 190,
+      "descricao": "Tela 15' - 1TB Armazenamento - 8GB RAM",
+      "precoAntes": 199.9,
+      "precoDepois": 179.9,
       "imagem": "https://picsum.photos/200/300?random=3",
-      "avaliacao": 4.6,
-      "comentarios": 180
+      "avaliacao": 4.7
     },
     {
       "id": "4",
-      "nome": "Câmera Canon",
-      "descricao": "Resolução 24MP - Zoom Óptico 10x - Wi-Fi",
-      "precoAntes": 699.9,
-      "precoDepois": 599.9,
+      "nome": "Smartwatch Xiaomi",
+      "comentarios": 120,
+      "descricao": "Tela 1.3' - 512MB Armazenamento - 256MB RAM",
+      "precoAntes": 49.9,
+      "precoDepois": 39.9,
       "imagem": "https://picsum.photos/200/300?random=4",
-      "avaliacao": 4.7,
-      "comentarios": 140
+      "avaliacao": 4.1
     },
     {
       "id": "5",
-      "nome": "Câmera Canon",
-      "descricao": "Resolução 24MP - Zoom Óptico 10x - Wi-Fi",
-      "precoAntes": 699.9,
-      "precoDepois": 599.9,
+      "nome": "Smart TV LG",
+      "comentarios": 180,
+      "descricao": "Tela 50' - 4K Ultra HD - 3 HDMI",
+      "precoAntes": 799.9,
+      "precoDepois": 699.9,
       "imagem": "https://picsum.photos/200/300?random=5",
-      "avaliacao": 4.7,
-      "comentarios": 140
+      "avaliacao": 4.9
     },
     {
       "id": "6",
-      "nome": "PS5 Sony",
-      "descricao": " 1TB Armazenamento - 16GB RAM - 4K",
-      "precoAntes": 699.9,
-      "precoDepois": 599.9,
+      "nome": "Câmera Canon",
+      "comentarios": 100,
+      "descricao": "Full HD - 24MP - Wi-Fi",
+      "precoAntes": 299.9,
+      "precoDepois": 279.9,
       "imagem": "https://picsum.photos/200/300?random=6",
-      "avaliacao": 4.7,
-      "comentarios": 140
+      "avaliacao": 4.6
     },
     {
       "id": "7",
-      "nome": "Notebook Dell",
-      "descricao": "Tela 15' - 1TB Armazenamento - 8GB RAM",
-      "precoAntes": 1299.9,
-      "precoDepois": 999.9,
+      "nome": "Soundbar JBL",
+      "comentarios": 90,
+      "descricao": "Potência 30W - Bluetooth",
+      "precoAntes": 149.9,
+      "precoDepois": 129.9,
       "imagem": "https://picsum.photos/200/300?random=7",
-      "avaliacao": 4.7,
-      "comentarios": 140
+      "avaliacao": 4.4
     },
     {
       "id": "8",
-      "nome": "Smartphone Samsung",
-      "descricao": "128GB Armazenamento - 6GB RAM - 5G",
-      "precoAntes": 899.9,
-      "precoDepois": 799.9,
+      "nome": "Monitor Gamer",
+      "comentarios": 80,
+      "descricao": "Tela 29' - Full HD - 144Hz",
+      "precoAntes": 399.9,
+      "precoDepois": 349.9,
       "imagem": "https://picsum.photos/200/300?random=8",
-      "avaliacao": 4.7,
-      "comentarios": 140
+      "avaliacao": 4.8
     },
     {
       "id": "9",
-      "nome": "Smartphone Xiaomi",
-      "descricao": "128GB Armazenamento - 6GB RAM - 5G",
-      "precoAntes": 699.9,
-      "precoDepois": 599.9,
+      "nome": "Impressora Epson",
+      "comentarios": 70,
+      "descricao": "Multifuncional - Jato de Tinta",
+      "precoAntes": 99.9,
+      "precoDepois": 79.9,
       "imagem": "https://picsum.photos/200/300?random=9",
-      "avaliacao": 4.7,
-      "comentarios": 140
+      "avaliacao": 4.2
     },
     {
       "id": "10",
-      "nome": "Smartphone Apple",
-      "descricao": "128GB Armazenamento - 6GB RAM - 5G",
-      "precoAntes": 999.9,
-      "precoDepois": 899.9,
-      "imagem": "https://picsum.photos/200/300?random=10",
-      "avaliacao": 4.7,
-      "comentarios": 140
-    },
-    {
-      "id": "35d0",
-      "nome": "TVBOX",
-      "comentarios": "123",
-      "descricao": "123",
-      "precoAntes": "123",
-      "precoDepois": "123",
-      "imagem": "https://picsum.photos/200/300?random=1",
-      "avaliacao": 4.8
+      "nome": "Fone de Ouvido Sony",
+      "comentarios": 60,
+      "descricao": "Bluetooth - Extra Bass",
+      "precoAntes": 49.9,
+      "precoDepois": 39.9
     }
   ]
 }

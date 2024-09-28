@@ -5,6 +5,10 @@ import Img1 from '../../assets/img1.jpg';
 import Img2 from '../../assets/img2.jpg';
 import Img3 from '../../assets/img3.jpg';
 import Img4 from '../../assets/img4.jpg';
+import Img5 from '../../assets/img5.jpg';
+import Img6 from '../../assets/img6.jpg';
+import Img7 from '../../assets/img7.jpg';
+import Img8 from '../../assets/img8.jpg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
@@ -32,29 +36,25 @@ const Slides = () => {
       src: Img4,
     },
     {
-      src: 'https://picsum.photos/200/300?random=10',
+      src: Img5,
     },
     {
-      src: 'https://picsum.photos/200/300?random=11',
+      src: Img6,
     },
     {
-      src: 'https://picsum.photos/200/300?random=12',
+      src: Img7,
     },
     {
-      src: 'https://picsum.photos/200/300?random=13',
-    },
-    {
-      src: 'https://picsum.photos/200/300?random=14',
+      src: Img8,
     },
   ];
 
   return (
-    <div className=" flex bg-zinc-n1 w-full justify-center h-[500px] pt-[60px] bg-red-400">
+    <div className=" flex bg-zinc-n1 w-full justify-center h-[500px] pt-[60px]">
       <Swiper
         spaceBetween={50}
         pagination={{ clickable: true }}
         slidesPerView={1}
-        loop={true}
         autoplay={{ delay: 3000 }}
         onSlideChange={() => console.log()}
         onSwiper={() => console.log()}

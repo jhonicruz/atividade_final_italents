@@ -2,11 +2,22 @@
 import ItemProdutoButton from './ItemProdutoButton';
 import { useMutateProduct } from '../../../hooks/queries/useMutateProduct';
 import { useQueryClient } from '@tanstack/react-query';
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from '@/components/ui/alert-dialog';
+
 const ItemProduto = ({ nome, id }) => {
   const { deleteProductMutation } = useMutateProduct();
   const queryClient = useQueryClient();
   async function handleDelete() {
-    if (!window.confirm('Deseja realmente deletar este produto?')) return;
     deleteProductMutation.mutate(id, {
       onSuccess: () => {
         queryClient.invalidateQueries(['deleteProduct']);
@@ -24,12 +35,25 @@ const ItemProduto = ({ nome, id }) => {
       <span className="col-span-3 text-wrap border-b p-2">{nome}</span>
       <span className="col-start-4 flex justify-center items-center border-b pt-2 pb-2">{id}</span>
       <ItemProdutoButton content="EDITAR" id={id} type="edit" />
-      <ItemProdutoButton
-        content="EXCLUIR"
-        className="bg-red-600 col-start-4"
-        onClick={handleDelete}
-        type="delete"
-      />
+
+      {/* Delete Product */}
+      <AlertDialog>
+        <AlertDialogTrigger className="col-start-4 bg-red-500 text-zinc-900 font-poppinsSemibold rounded mt-4 p-2 text-center uppercase">
+          excluir
+        </AlertDialogTrigger>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogTitle>Deseja excluir este produto?</AlertDialogTitle>
+            <AlertDialogDescription>
+              A exclusão do produto é permanente e não pode ser desfeita.
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogCancel>CANCELAR</AlertDialogCancel>
+            <AlertDialogAction onClick={handleDelete}>EXCLUIR</AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
     </div>
   );
 };
