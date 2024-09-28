@@ -31,6 +31,21 @@ const Slides = () => {
     {
       src: Img4,
     },
+    {
+      src: 'https://picsum.photos/200/300?random=10',
+    },
+    {
+      src: 'https://picsum.photos/200/300?random=11',
+    },
+    {
+      src: 'https://picsum.photos/200/300?random=12',
+    },
+    {
+      src: 'https://picsum.photos/200/300?random=13',
+    },
+    {
+      src: 'https://picsum.photos/200/300?random=14',
+    },
   ];
 
   return (
@@ -39,6 +54,7 @@ const Slides = () => {
         spaceBetween={50}
         pagination={{ clickable: true }}
         slidesPerView={1}
+        loop={true}
         autoplay={{ delay: 3000 }}
         onSlideChange={() => console.log()}
         onSwiper={() => console.log()}
