@@ -1,19 +1,21 @@
-import React from 'react';
+/* eslint-disable react/prop-types */
 import ItemProdutoButton from './ItemProdutoButton';
-
+import { useMutateProduct } from '../../../hooks/queries/useMutateProduct';
+import { useQueryClient } from '@tanstack/react-query';
 const ItemProduto = ({ nome, id }) => {
+  const { deleteProductMutation } = useMutateProduct();
+  const queryClient = useQueryClient();
   async function handleDelete() {
     if (!window.confirm('Deseja realmente deletar este produto?')) return;
-    const response = await fetch(`http://localhost:3000/produtos/${id}`, {
-      method: 'DELETE',
+    deleteProductMutation.mutate(id, {
+      onSuccess: () => {
+        queryClient.invalidateQueries(['deleteProduct']);
+      },
+      onError: (error) => {
+        console.error('Erro ao deletar produto:', error);
+      },
     });
-    if (!response.ok) throw new Error('Erro ao deletar produto');
-    window.location.reload();
   }
-
-  /* * Falta implementar algum modal de confirmação mais bonito
-   * FAlta implementar um Hook de FETCH
-   */
 
   return (
     <div className="grid grid-cols-4 auto-rows-auto max-w-full gap-1" key={id}>

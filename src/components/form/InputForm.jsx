@@ -9,6 +9,7 @@ const InputForm = ({ label, id, type = 'text', setValue, value, ...rest }) => {
       </label>
       <input
         {...rest}
+        required
         id={id}
         value={value}
         type={type}
