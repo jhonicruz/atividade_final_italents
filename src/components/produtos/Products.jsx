@@ -1,19 +1,11 @@
-import React from 'react';
 import Product from './produto/Product';
+import { useGetProducts } from '../../hooks/queries/useGetProducts';
 
 const Products = () => {
-  const [products, setProducts] = React.useState([]);
+  const { data: products, isLoading, isError, error } = useGetProducts();
 
-  React.useEffect(() => {
-    async function fecthData() {
-      const response = await fetch('http://localhost:3000/produtos');
-      if (!response.ok) throw new Error('Erro ao buscar dados');
-      const data = await response.json();
-      setProducts(data);
-    }
-    fecthData();
-  }, []);
-
+  if (isLoading) return <p className="p-4 text-white">Carregando Produtos...</p>;
+  if (isError) return <p>Error: {error.message}</p>;
   return (
     <main className="grid grid-cols-2 p-3 pt-[60px] pb-[100px] gap-5">
       {products &&

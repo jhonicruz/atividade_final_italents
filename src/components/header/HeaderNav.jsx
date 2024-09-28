@@ -17,7 +17,7 @@ export const HeaderNav = ({ media, trigger: Trigger }) => {
           <li>
             {/* <Link to="/teste" content="Cadastrar Produto" /> */}
 
-            <Link to="/cadastrar-produtos">Cadastrar Produtos</Link>
+            <Link to="/gerenciar-produtos">Cadastrar Produtos</Link>
           </li>
         </MenuDesktop>
       ) : (

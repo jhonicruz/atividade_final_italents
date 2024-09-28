@@ -34,7 +34,7 @@ const Slides = () => {
   ];
 
   return (
-    <div className=" flex bg-zinc-n1 w-full justify-center h-[400px] pt-[60px] bg-red-400">
+    <div className=" flex bg-zinc-n1 w-full justify-center h-[500px] pt-[60px] bg-red-400">
       <Swiper
         spaceBetween={50}
         pagination={{ clickable: true }}

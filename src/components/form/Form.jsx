@@ -1,6 +1,7 @@
 import React from 'react';
 import InputForm from './InputForm';
 import Button from '../buttons/Button';
+import { useMutateProduct } from '../../hooks/queries/useMutateProduct';
 
 const Form = () => {
   const [name, setName] = React.useState('');
@@ -8,34 +9,40 @@ const Form = () => {
   const [description, setDescription] = React.useState('');
   const [priceBefore, setPriceBefore] = React.useState('');
   const [priceNow, setPriceNow] = React.useState('');
+  const [errorMessage, setErrorMessage] = React.useState(''); // Estado para armazenar a mensagem de erro
+  const { addProductMutation } = useMutateProduct();
 
-  async function handleSubmit() {
-    const response = await fetch(`http://localhost:3000/produtos/`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const product = {
+      nome: name,
+      comentarios: rate,
+      descricao: description,
+      precoAntes: priceBefore,
+      precoDepois: priceNow,
+      imagem: 'https://picsum.photos/200/300?random=1',
+      avaliacao: 4.8,
+    };
+    addProductMutation.mutate(product, {
+      onSuccess: () => {
+        alert('Produto adicionado com sucesso!');
+        // Limpar os campos do formulário após a submissão bem-sucedida
+        setName('');
+        setRate('');
+        setDescription('');
+        setPriceBefore('');
+        setPriceNow('');
       },
-      body: JSON.stringify({
-        nome: name,
-        rate,
-        descricao: description,
-        precoAntes: priceBefore,
-        precoDepois: priceNow,
-        avaliacao: 4.8,
-        comentarios: 320,
-        imagem: 'https://via.placeholder.com/150',
-      }),
+      onError: (error) => {
+        console.error('Erro ao adicionar produto:', error);
+        setErrorMessage('Erro ao adicionar produto. Tente novamente.');
+      },
     });
-
-    // Falta implementar o hook de fetch
-    // Falta implementar o feedback visual, cadastrando... e cadastrado com sucesso
-
-    if (!response.ok) throw new Error('Erro ao cadastrar produto');
-    window.location.reload();
   }
 
   return (
     <div className="flex flex-col gap-8">
+      {errorMessage && <p className="text-red-500">{errorMessage}</p>}
       <form className="grid grid-cols-4 gap-2" id="meuFormulario" onSubmit={handleSubmit}>
         <InputForm
           name="nome-produto"
