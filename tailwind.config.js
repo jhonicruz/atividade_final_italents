@@ -70,6 +70,7 @@ export default {
       },
       screens: {
         xs: '340px',
+        single: '600px',
       },
     },
   },

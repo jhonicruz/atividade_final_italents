@@ -7,6 +7,8 @@ import { useMutateProduct } from '../hooks/queries/useMutateProduct';
 import Button from '../components/buttons/Button';
 import Message from '../components/message/Message';
 import Title from '../components/title/Title';
+import Head from '../components/head/Head';
+
 const EditProduct = () => {
   const { id } = useParams();
 
@@ -65,6 +67,7 @@ const EditProduct = () => {
   if (isError) return <p>Error: {error.message}</p>;
   return (
     <div className="pt-[150px] pb-[100px] text-white w-full items-center flex flex-col p-4 gap-10">
+      <Head title="Fiction | Editar Produto" description="Editar produto da loja Fiction" />
       <Title content="Editar Produto" />
       {update && <Message content="Produto atualizado com sucesso!" />}
 
@@ -116,8 +119,13 @@ const EditProduct = () => {
           setValue={setPriceNow}
           className="col-span-2"
         />
+        <Button
+          className="col-span-full mt-6"
+          content="EDITAR"
+          type="submit"
+          form="meuFormulario"
+        />
       </form>
-      <Button content="EDITAR" type="submit" form="meuFormulario" />
     </div>
   );
 };

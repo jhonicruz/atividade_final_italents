@@ -99,6 +99,16 @@
       "precoDepois": 39.9,
       "imagem": "https://picsum.photos/200/300?random=10",
       "avaliacao": 4.2
+    },
+    {
+      "id": "61db",
+      "nome": "TV BOX",
+      "comentarios": "123123",
+      "descricao": "123123",
+      "precoAntes": "123",
+      "precoDepois": "123",
+      "imagem": "https://picsum.photos/200/300?random=1",
+      "avaliacao": 4.8
     }
   ]
 }

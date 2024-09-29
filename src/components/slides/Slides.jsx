@@ -50,7 +50,7 @@ const Slides = () => {
   ];
 
   return (
-    <div className=" flex bg-zinc-n1 w-full justify-center h-[500px] pt-[60px] lg:h-[600px]">
+    <div className=" flex bg-zinc-n1 w-full justify-center h-[500px] pt-[60px] lg:h-[550px]">
       <Swiper
         spaceBetween={50}
         pagination={{ clickable: true }}

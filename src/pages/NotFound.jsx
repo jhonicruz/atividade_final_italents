@@ -1,13 +1,16 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import Head from '../components/head/Head';
+import Lost from '../assets/svgs/lost.svg?react';
+
 const NotFound = () => {
   const navigate = useNavigate();
-  const [timeLeft, setTimeLeft] = React.useState(3);
+  const [timeLeft, setTimeLeft] = React.useState(5);
 
   React.useEffect(() => {
     const timer = setTimeout(() => {
       navigate('/');
-    }, 3000);
+    }, 5000);
 
     const interval = setInterval(() => {
       setTimeLeft((prevTime) => prevTime - 1);
@@ -19,10 +22,14 @@ const NotFound = () => {
     };
   }, [navigate]);
   return (
-    <div className="flex items-center justify-center w-full h-screen pt-[60px] bg-red-400">
-      <h2 className="bg-white text-center">
-        Ops, não encontramos nada por aqui. Você será redirecionado em {timeLeft} segundos.
+    <div className="flex flex-col items-center w-full pt-[120px] justify-center gap-24">
+      <Head title="Fiction | 404" description="Página não encontrada" />
+      <h2 className=" text-center text-white text-2xl">
+        Ops, não encontramos nada por aqui.{' '}
+        <span className="block">Você será redirecionado em {timeLeft} segundos.</span>
       </h2>
+
+      <Lost className=" w-full max-h-[300px]" />
     </div>
   );
 };

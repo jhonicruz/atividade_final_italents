@@ -10,14 +10,18 @@ const SingleProduct = () => {
   if (isLoading) return <p className="pt-[120px] p-4 text-white">Loading...</p>;
   if (isError) return <p>Error: {error.message}</p>;
   return (
-    <div className="grid grid-cols-1 p-8 pt-[100px]">
+    <div className="grid grid-cols-1 p-8 pt-[100px] justify-center">
       <a
         href="#"
-        className="flex flex-col items-center gap-2 h-auto w-full bg-n2 rounded-b grow-0"
+        className="flex flex-col items-center gap-2 h-auto w-full bg-n2 rounded-b grow-0 md:flex-row md:w-[600px]  md:m-auto md:p-5"
         onClick={(e) => e.preventDefault()}
       >
-        <Product.Image image={product.imagem} alt={id} className="h-[300px]" />
-        <Product.Infos>
+        <Product.Image
+          image={product.imagem}
+          alt={id}
+          className="h-[300px] md:h-[350px] md:roundend"
+        />
+        <Product.Infos className="md:gap-1">
           <Product.Rating rate="250" />
           <Product.Title title={product.nome} className="text-3xl" />
           <Product.Description descripton={product.descricao} />
