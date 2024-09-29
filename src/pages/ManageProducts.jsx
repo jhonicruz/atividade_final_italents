@@ -7,11 +7,11 @@ import { useGetProducts } from '../hooks/queries/useGetProducts';
 const ManageProducts = () => {
   const { data: products } = useGetProducts();
   return (
-    <div className="pt-[150px] pb-[100px] text-white w-full flex flex-col p-4 gap-10 max-w-[800px] m-auto">
+    <div className="pt-[150px] pb-[100px] text-white w-full flex flex-col p-4 gap-10 max-w-[600px] m-auto">
       <Title content="Cadastrar Produto" />
       <Form />
       <Divisor className="bg-custom2" />
-      <Title content="Editar Produtos respo" />
+      <Title content="Editar Produtos" />
 
       {products &&
         products.map(({ nome, id }) => {

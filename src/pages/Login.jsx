@@ -28,7 +28,7 @@ const Login = () => {
       <Title content="Login" />
 
       <form
-        className="grid grid-cols-4 gap-2 w-full max-w-[800px] "
+        className="grid grid-cols-4 gap-2 w-full max-w-[600px] "
         id="meuFormulario"
         onSubmit={handleSubmit}
       >
