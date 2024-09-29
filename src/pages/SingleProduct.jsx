@@ -11,8 +11,12 @@ const SingleProduct = () => {
   if (isError) return <p>Error: {error.message}</p>;
   return (
     <div className="grid grid-cols-1 p-8 pt-[100px]">
-      <Product.Root>
-        <Product.Image image={product.imagem} alt={id} />
+      <a
+        href="#"
+        className="flex flex-col items-center gap-2 h-auto w-full bg-n2 rounded-b grow-0"
+        onClick={(e) => e.preventDefault()}
+      >
+        <Product.Image image={product.imagem} alt={id} className="h-[300px]" />
         <Product.Infos>
           <Product.Rating rate="250" />
           <Product.Title title={product.nome} className="text-3xl" />
@@ -21,7 +25,7 @@ const SingleProduct = () => {
           <Product.PriceNow priceNow={product.precoDepois} className="text-[22px]" />
           <Product.Button />
         </Product.Infos>
-      </Product.Root>
+      </a>
     </div>
   );
 };

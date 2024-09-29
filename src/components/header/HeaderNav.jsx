@@ -10,8 +10,6 @@ export const HeaderNav = ({ media, trigger: Trigger }) => {
 
   const { isLoggedIn, setIsLoggedIn } = React.useContext(LoginContext);
 
-  console.log(isLoggedIn);
-
   return (
     <nav>
       {isDesktop ? (
