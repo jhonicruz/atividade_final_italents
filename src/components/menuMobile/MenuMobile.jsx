@@ -1,15 +1,16 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import {
   Drawer,
   DrawerClose,
   DrawerContent,
-  DrawerDescription,
   DrawerFooter,
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
 } from '../ui/drawer';
 import { Link } from 'react-router-dom';
+import { LoginContext } from '../../hooks/LoginContext';
 
 const MenuMobile = ({ trigger: Trigger }) => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -17,6 +18,13 @@ const MenuMobile = ({ trigger: Trigger }) => {
   const handleLinkClick = () => {
     setIsOpen(false);
   };
+  const { isLoggedIn, setIsLoggedIn } = React.useContext(LoginContext);
+
+  function handleLogout() {
+    localStorage.removeItem('token');
+    setIsLoggedIn(!isLoggedIn);
+    setIsOpen(false);
+  }
 
   return (
     <div>
@@ -34,13 +42,24 @@ const MenuMobile = ({ trigger: Trigger }) => {
                 </Link>
               </li>
               <li>
-                <Link to="/gerenciar-produtos" onClick={handleLinkClick}>
-                  Gerenciar Produtos
-                </Link>
+                {isLoggedIn ? (
+                  <Link to="/gerenciar-produtos" onClick={handleLinkClick}>
+                    Cadastrar Produtos
+                  </Link>
+                ) : (
+                  <Link to="/login" onClick={handleLinkClick}>
+                    Login
+                  </Link>
+                )}
               </li>
-              <li>
-                <Link to="/login" content="Login" onClick={handleLinkClick} />
-              </li>
+
+              {isLoggedIn && (
+                <li>
+                  <Link to="/" onClick={handleLogout}>
+                    Sair
+                  </Link>
+                </li>
+              )}
             </ul>
           </nav>
           <DrawerFooter>

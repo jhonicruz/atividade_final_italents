@@ -65,6 +65,9 @@ export default {
           5: 'hsl(var(--chart-5))',
         },
       },
+      minHeight: {
+        login: 'calc(100vh - 330px)',
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],
