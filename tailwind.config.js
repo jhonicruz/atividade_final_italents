@@ -68,6 +68,9 @@ export default {
       minHeight: {
         login: 'calc(100vh - 330px)',
       },
+      screens: {
+        xs: '340px',
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],
