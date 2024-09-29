@@ -65,7 +65,7 @@ npm serve
 npm start
 ```
 
-## Instalação
+## Estrutura do Projeto
 
 - src/components: Componentes reutilizáveis do projeto.
 - src/hooks: Hooks customizados, incluindo hooks de queries.
