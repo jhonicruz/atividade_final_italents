@@ -16,7 +16,6 @@ Este projeto tem como objetivo pôr em prática meus conhecimentos de React. O p
 - [x] Login
 - [x] Logout
 - [x] Validação de formulários
-- [x] Scroll infinito
 
 ## Libraries
 
