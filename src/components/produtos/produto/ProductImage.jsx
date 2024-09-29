@@ -1,6 +1,5 @@
 import { twMerge } from 'tailwind-merge';
 
-/* eslint-disable react/prop-types */
 export const ProductImage = ({ image, alt, ...rest }) => {
   return (
     <div

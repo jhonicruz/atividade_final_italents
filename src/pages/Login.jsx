@@ -17,8 +17,12 @@ const Login = () => {
 
     if (name && email) {
       setIsLoggedIn(!isLoggedIn);
-      localStorage.setItem('name', name);
-      localStorage.setItem('email', email);
+      const userInfo = {
+        name,
+        email,
+      };
+
+      localStorage.setItem('userInfo', JSON.stringify(userInfo));
       navigate('/gerenciar-produtos');
     }
   }
