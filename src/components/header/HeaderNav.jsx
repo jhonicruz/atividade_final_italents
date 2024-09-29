@@ -8,7 +8,7 @@ import { LoginContext } from '../../hooks/LoginContext';
 export const HeaderNav = ({ media, trigger: Trigger }) => {
   const isDesktop = useMediaQuery(media);
 
-  const { isLoggedIn } = React.useContext(LoginContext);
+  const { isLoggedIn, setIsLoggedIn } = React.useContext(LoginContext);
 
   console.log(isLoggedIn);
 
@@ -28,7 +28,9 @@ export const HeaderNav = ({ media, trigger: Trigger }) => {
           </li>
           {isLoggedIn && (
             <li>
-              <Link to="/logout">Sair</Link>
+              <Link to="/" onClick={() => setIsLoggedIn(!isLoggedIn)}>
+                Sair
+              </Link>
             </li>
           )}
         </MenuDesktop>
