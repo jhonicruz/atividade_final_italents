@@ -10,6 +10,11 @@ export const HeaderNav = ({ media, trigger: Trigger }) => {
 
   const { isLoggedIn, setIsLoggedIn } = React.useContext(LoginContext);
 
+  function handleLoggout() {
+    localStorage.removeItem('userInfo');
+    setIsLoggedIn(!isLoggedIn);
+  }
+
   return (
     <nav>
       {isDesktop ? (
@@ -26,7 +31,7 @@ export const HeaderNav = ({ media, trigger: Trigger }) => {
           </li>
           {isLoggedIn && (
             <li>
-              <Link to="/" onClick={() => setIsLoggedIn(!isLoggedIn)}>
+              <Link to="/" onClick={handleLoggout}>
                 Sair
               </Link>
             </li>

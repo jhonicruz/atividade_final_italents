@@ -3,10 +3,6 @@ import React from 'react';
 const Card = () => {
   return (
     <a onClick={() => console.log('clicou')}>
-      {/* image */}
-
-      {/* infos */}
-
       <div className="flex flex-col gap-4 p-2 rounded-b overflow-hidden">
         <div className="flex items-center justify-center gap-1">
           <div className="flex">

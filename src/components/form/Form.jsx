@@ -10,7 +10,7 @@ const Form = () => {
   const [description, setDescription] = React.useState('');
   const [priceBefore, setPriceBefore] = React.useState('');
   const [priceNow, setPriceNow] = React.useState('');
-  const [errorMessage, setErrorMessage] = React.useState(''); // Estado para armazenar a mensagem de erro
+  const [errorMessage, setErrorMessage] = React.useState('');
 
   const [sucess, setSucess] = React.useState(false);
 

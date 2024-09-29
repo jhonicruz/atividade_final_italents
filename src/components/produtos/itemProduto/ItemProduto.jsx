@@ -36,7 +36,6 @@ const ItemProduto = ({ nome, id }) => {
       <span className="col-start-4 flex justify-center items-center border-b pt-2 pb-2">{id}</span>
       <ItemProdutoButton content="EDITAR" id={id} type="edit" />
 
-      {/* Delete Product */}
       <AlertDialog>
         <AlertDialogTrigger className="col-start-4 bg-red-500 text-zinc-900 font-poppinsSemibold rounded mt-4 p-2 text-center uppercase">
           excluir

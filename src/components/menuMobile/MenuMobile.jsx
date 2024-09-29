@@ -21,7 +21,7 @@ const MenuMobile = ({ trigger: Trigger }) => {
   const { isLoggedIn, setIsLoggedIn } = React.useContext(LoginContext);
 
   function handleLogout() {
-    localStorage.removeItem('token');
+    localStorage.removeItem('userInfo');
     setIsLoggedIn(!isLoggedIn);
     setIsOpen(false);
   }
