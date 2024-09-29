@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <LoginStorage>
-        <div>
+        <div className="max-w-[1500px] m-auto">
           <BrowserRouter>
             <Header />
             <Routes>

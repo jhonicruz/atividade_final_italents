@@ -24,10 +24,14 @@ const Login = () => {
   }
 
   return (
-    <div className="pt-[200px] pb-[100px] text-white min-h-login w-full flex flex-col p-4 gap-10">
+    <div className="pt-[200px] pb-[100px] text-white min-h-login w-full flex flex-col items-center p-4 gap-10">
       <Title content="Login" />
 
-      <form className="grid grid-cols-4 gap-2 w-full" id="meuFormulario" onSubmit={handleSubmit}>
+      <form
+        className="grid grid-cols-4 gap-2 w-full max-w-[800px] "
+        id="meuFormulario"
+        onSubmit={handleSubmit}
+      >
         <InputForm
           name="nome"
           label="Nome"
