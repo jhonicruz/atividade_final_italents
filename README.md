@@ -72,3 +72,8 @@ npm start
 - src/routes: Arquivo de rotas do projeto.
 - src/lib: Funções utilitárias do projeto.
 - src/assets: Imagens, fontes e svgs.
+
+  A identidade Visual também foi desenvolvida do zero. Logomarca, cores, componentes, layout etc. 
+acesse o Figma do projeto: 
+[Figma do projeto](https://www.figma.com/design/1F8MzZ7dyHUk57Xxe8yzCA/Atividade_Final_italents?node-id=0-1&t=m6lkgI41M8QgYPy5-1)
+
