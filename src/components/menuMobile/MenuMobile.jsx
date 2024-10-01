@@ -11,6 +11,7 @@ import {
 } from '../ui/drawer';
 import { Link } from 'react-router-dom';
 import { LoginContext } from '../../hooks/LoginContext';
+import { LogIn, LogOut } from 'lucide-react';
 
 const MenuMobile = ({ trigger: Trigger }) => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -51,7 +52,12 @@ const MenuMobile = ({ trigger: Trigger }) => {
                     Cadastrar Produtos
                   </Link>
                 ) : (
-                  <Link to="/login" onClick={handleLinkClick} className="text-white uppercase">
+                  <Link
+                    to="/login"
+                    onClick={handleLinkClick}
+                    className="p-2 px-4 bg-p1 rounded text-zinc-900 flex gap-2 w-[fit-content] uppercase"
+                  >
+                    <LogIn />
                     Login
                   </Link>
                 )}
@@ -59,7 +65,12 @@ const MenuMobile = ({ trigger: Trigger }) => {
 
               {isLoggedIn && (
                 <li>
-                  <Link to="/" onClick={handleLogout}>
+                  <Link
+                    to="/"
+                    onClick={handleLogout}
+                    className=" px-4 flex gap-2 bg-red-500 p-2 rounded text-zinc-900 w-[fit-content] uppercase"
+                  >
+                    <LogOut />
                     Sair
                   </Link>
                 </li>
