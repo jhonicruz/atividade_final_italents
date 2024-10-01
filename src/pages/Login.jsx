@@ -54,7 +54,7 @@ const Login = () => {
           className="col-span-full"
         />
         <Button
-          content="Cadastrar"
+          content="Login"
           type="submit"
           form="meuFormulario"
           className="w-full flex col-span-full mt-6"

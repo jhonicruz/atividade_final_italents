@@ -34,20 +34,24 @@ const MenuMobile = ({ trigger: Trigger }) => {
           <DrawerHeader>
             <DrawerTitle id="drawer-title">Menu</DrawerTitle>
           </DrawerHeader>
-          <nav>
+          <nav className='className="bg-zinc-900"'>
             <ul className="flex flex-col gap-4 p-4 text-zinc-900">
               <li>
-                <Link to="/" onClick={handleLinkClick} className="text-zinc-900">
+                <Link to="/" onClick={handleLinkClick} className="text-white uppercase">
                   Produtos
                 </Link>
               </li>
               <li>
                 {isLoggedIn ? (
-                  <Link to="/gerenciar-produtos" onClick={handleLinkClick}>
+                  <Link
+                    to="/gerenciar-produtos"
+                    onClick={handleLinkClick}
+                    className="text-white uppercase"
+                  >
                     Cadastrar Produtos
                   </Link>
                 ) : (
-                  <Link to="/login" onClick={handleLinkClick}>
+                  <Link to="/login" onClick={handleLinkClick} className="text-white uppercase">
                     Login
                   </Link>
                 )}
